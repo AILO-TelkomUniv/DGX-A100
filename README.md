@@ -17,7 +17,7 @@ This repository contains guide for AILO DGX-A100 Server admin. Every script in t
 * Docker
 * NVIDIA Container Toolkit
 
-## Config MIG
+## Multi-Instance GPU Configuration
 This mig configuration is obtained by dividing the gpu into several parts with [MIG (Multi-Instance GPU)](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html). MIG only work on specific GPU, see supported GPU [here](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html#supported-gpus).
 
 <div align="center">
