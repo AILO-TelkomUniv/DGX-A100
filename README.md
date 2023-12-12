@@ -65,3 +65,10 @@ This script will stop and remove user's container, linux user, and directory (`/
 ```
 sudo ./cleanup.sh <username>
 ```
+
+### TODO
+- [x] Video Tutorial for Admin
+- [ ] Video Tutorial for User
+- [ ] User Tutorial in AILO Website (need coordination)
+- [ ] Create a config file to store currently used GPU
+- [ ] Integration with Telkom University Gateway Server (need coordination)
