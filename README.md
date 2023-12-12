@@ -40,7 +40,7 @@ This MIG partition method can be improved by using [MIG-Parted (MIG Partiton Edi
 ## Running Container
 
 ### Build AILO Image
-This image is a modified version of the NVIDIA official docker image for [NVIDIA NGC Catalog](https://catalog.ngc.nvidia.com/). This image will automatically create a password for jupyter lab and run it after. To build the `Dockerfile`, you can use this command:
+This image is a modified version of the NVIDIA official docker image for [NVIDIA NGC Catalog](https://catalog.ngc.nvidia.com/). The image from this repository can be modified as you please.This image will automatically create a password for jupyter lab and run it after. To build the `Dockerfile`, you can use this command:
 
 ```
 sudo docker build -t ailo/torch:<image-tag> .
