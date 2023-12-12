@@ -8,7 +8,7 @@
 
 ----
 
-This repository contains guide for AILO DGX-A100 Server admin. Every script in this repository can run out-of-the-box with DGX OS installed in the system. If you are running this outside of the DGX OS system, you have to install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/) to use the `--gpus` flag in docker. 
+This repository contains guide for AILO DGX-A100 Server admin. Every script in this repository can run out-of-the-box with NVIDIA GPU and DGX OS installed in the system. If you are running this outside of the DGX OS system, you have to install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/) to use the `--gpus` flag in docker. 
 
 ## Prequisites
 
