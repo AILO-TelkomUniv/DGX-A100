@@ -8,14 +8,14 @@
 
 ----
 
-This repository contains guide for AILO DGX-A100 Server admin. Every script in this repository can run out-of-the-box with DGX OS installed in the system. If you are running this outside of the DGX OS system, you have to install the NVIDIA Container Toolkit to use the `--gpus` flag in docker. 
+This repository contains guide for AILO DGX-A100 Server admin. Every script in this repository can run out-of-the-box with DGX OS installed in the system. If you are running this outside of the DGX OS system, you have to install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/) to use the `--gpus` flag in docker. 
 
 ## Prequisites
 
 * NVIDIA GPU
 * DGX OS (not mandatory)
-* Docker
-* NVIDIA Container Toolkit
+* [Docker](https://docs.docker.com/)
+* [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/)
 
 ## Multi-Instance GPU Configuration
 This mig configuration is obtained by dividing the GPU into several parts with [MIG (Multi-Instance GPU)](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html). MIG only work on specific GPU, see supported GPU [here](https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html#supported-gpus).
@@ -50,7 +50,7 @@ sudo docker build -t ailo/torch:<image-tag> .
 This script will create container and a directory (`/raid/dockerv/<username>`) for docker volume (bind). The script will also generate a random password consisting of 12 characters. To run this script, you can use this command:
 
 ```
-sudo ./run.sh <username> <image:image-tag> <gpu memory> <port> --gpus="device=" [additional docker parameters]
+sudo ./run.sh <username> <image:image-tag> <gpu memory> <port> --gpus="device=<MIG UUID>" [additional docker parameters]
 ```
 
 ### Creating Linux User
