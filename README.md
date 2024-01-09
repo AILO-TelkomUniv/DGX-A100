@@ -68,7 +68,7 @@ sudo ./cleanup.sh <username>
 
 ## TODO
 - [x] Video Tutorial for Admin
-- [ ] RAID 0 to RAID 5
+- [x] RAID 0 to RAID 5
 - [ ] Video Tutorial for User
 - [ ] User Tutorial in AILO Website (need coordination)
 - [ ] Create a config file to store currently used GPU
