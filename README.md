@@ -48,7 +48,7 @@ sudo docker build -t ailo/torch:<image-tag> .
 ```
 
 ### Run Container
-This script will create container and a directory (`/raid/dockerv/<username>`) for docker volume (bind). The script will also generate a random password consisting of 12 characters. Make sure this CPU used in each container not exceeding CPU core in the system. You can change the CPU core configuration in the `run.sh` file. To run this script, you can use this command:
+This script will create container and a directory (`/raid/dockerv/<username>`) for docker volume (bind). The script will also generate a random password consisting of 12 characters. Make sure this CPU used in each container not exceeding CPU core in the system (The rule of thumb for DGX A100 server is the sum of used CPU in container < 256). You can change the CPU core configuration in the `run.sh` file. To run this script, you can use this command:
 
 ```
 sudo ./run.sh <username> <image:image-tag> <gpu memory> <port> --gpus="device=<MIG UUID>" [additional docker parameters]
