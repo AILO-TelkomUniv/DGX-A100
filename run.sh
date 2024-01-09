@@ -47,9 +47,9 @@ DEFAULT_DOCKER_PARAMS="-itd -e JUPYTER_PASSWORD=$JUPYTER_PASSWORD"
 if [ "$GPU_MEMORY" -eq 5 ]; then
     CPU=4
 elif [ "$GPU_MEMORY" -eq 10 ]; then
-    CPU=8
+    CPU=12
 elif [ "$GPU_MEMORY" -eq 20 ]; then
-    CPU=14
+    CPU=16
 elif [ "$GPU_MEMORY" -eq 40 ]; then
     CPU=24
 else
