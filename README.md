@@ -22,7 +22,7 @@ This mig configuration is obtained by dividing the GPU into several parts with [
 
 <div align="center">
   
-| Size MIG | Availability |
+| MIG Partition | Availability |
 |:----------:|:----------:|
 | 1g.5gb | 0 |
 | 1g.10gb | 2 |
