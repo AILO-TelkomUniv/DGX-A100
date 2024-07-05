@@ -67,6 +67,24 @@ This script will stop and remove user's container, linux user, and directory (`/
 sudo ./cleanup.sh <username>
 ```
 
+## Additional Operation
+
+### Change GPU 
+This script help changing the GPU device from one to another with a single command. Current container will be commited into new image then run a new container with new GPU device using the new image. 
+```
+sudo ./change_device.sh <username> <image tag> <gpu memory> <port> <MIG UUID>
+```
+
+### Run with Custom Directory (Default: /raid/dockerv/$USERNAME)
+This script will run docker on custom directory. The default `run.sh` will run the container on `/raid/dockerv/$USERNAME`. Container created with this script can have a different folder name other than the username. This script default path is `/raid/dockerv/$CUSTOM_DIRECTORY`.
+
+```
+sudo ./run_folder.sh <username> <custom directory> <image> <gpu memory> <port> --gpus="device=<MIG UUID>"
+```
+
+### Scheduler
+
+
 ## TODO
 - [x] Video Tutorial for Admin
 - [x] RAID 0 to RAID 5
