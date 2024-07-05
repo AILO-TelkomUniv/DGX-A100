@@ -83,7 +83,19 @@ sudo ./run_folder.sh <username> <custom directory> <image> <gpu memory> <port> -
 ```
 
 ### Scheduler
+To increase efficiency the GPU usage by AILO's member, we add scheduling mechanism. 
 
+<div align="center">
+  
+| MIG Partition | MON-WED | THU-SUN |
+|:----------:|:----------:|:----------:|
+| 4g.20gb | container 1 | container 2 |
+| 3g.20gb | container 3 | container 4 |
+| 3g.20gb | container 5 | container 6 |
+| 3g.20gb | container 7 | container 8 |
+| 3g.20gb | container 9 | container 10 |
+  
+</div>
 
 ## TODO
 - [x] Video Tutorial for Admin
